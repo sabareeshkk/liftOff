@@ -1,0 +1,38 @@
+<div class="row row-eq-height">
+<div class="col-md-6">
+<form name="questionForm" ng-submit="home.submit(home.answers)" novalidate>
+
+<div class="form-group well-box" ng-repeat="question in home.questions">
+    <ng-form name="userFieldForm">
+
+        <div class="question">
+            <h5><strong>{{$index + 1}}. </strong>{{question.question}}</h5>
+        </div>
+
+        <select name="question" ng-model="home.answers[question.model]" ng-options="option for option in question.options" class="well select-box" required>
+            <option value="">Select Answer</option> 	
+        </select>
+        <p class="help-block" ng-if="userFieldForm.question.$error.required && questionForm.$submitted" style="color:red">Please Select One Answer</p>
+    </ng-form>
+</div>
+
+<div class="form-group">
+   <div class="row" style="padding: 0px;">
+      <div class="col-lg-6 col-md-12">
+   	   <button type="submit" class="btn btn-default col-lg-12 col-md-12 col-xs-12">Submit</button>	
+      </div>
+      <div class="col-lg-6 col-md-12 col-xs-12">
+	   <button type="button" class="btn btn-default col-lg-12 col-md-12 col-xs-12" ng-click="home.clear()">Clear</button>
+      </div>
+   </div>
+</div>
+
+</form>
+</div>
+
+<div class="col-md-6" style="height: 670px;" ng-if="home.showGraph">
+ <canvas id="bar" class="chart chart-bar" chart-data="home.graphData" chart-labels="home.labels"  height="328">
+ </canvas>
+</div>
+
+</div>

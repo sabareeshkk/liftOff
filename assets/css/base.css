@@ -1,0 +1,19 @@
+.question {
+	/*padding: 17px;*/
+	background-color: black;
+    color: white;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+.select-box {
+	    background: white;
+	    padding: 7px;
+}
+
+.well-box {
+	min-height: 20px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}

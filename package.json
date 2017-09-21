@@ -1,0 +1,22 @@
+{
+  "name": "vagupu",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-chart.js": "^1.1.1",
+    "angular-messages": "^1.6.6",
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^3.3.7",
+    "bootstrap-select": "^1.12.4",
+    "chart.js": "^2.7.0",
+    "http-server": "^0.10.0",
+    "ui-select": "^0.19.8"
+  }
+}
